@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: calc(100vh - 1rem);
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+    background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+    background-position: bottom -25rem right -16rem, top -25rem left -20rem;
+    background-size: auto;
+    background-repeat: no-repeat, no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+.bg-top{
+    position: absolute;
+    top: -50%;
+    left: -20%;
+}
+
+.bg-bot{
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 300px;
+}
+
+.card-upper img {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.profile-pic {
+    position: absolute;
+    width: 5rem;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12rem;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    z-index: 1;
+}
+
+.identiity {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.identiity h2 {
+    font-size: 18px;
+}
+
+.identiity span{
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.identiity p {
+    color: var(--dark-gray);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.followers{
+    border-top: 1px solid hsl(227, 10%, 46%, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+
+}
+
+.followers li {
+    text-align: center;
+}
+
+.followers li p {
+    font-weight: 700;
+}
+
+.followers li span {
+    color: var(--dark-gray);
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
